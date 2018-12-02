@@ -8,7 +8,7 @@ int main() {
     
     printf("Enter time in format hh:mm:ss\n");
     scanf("%d:%d:%d", &hour, &min, &sec);
-    printf("%s\n", greet(hour, min, sec));
+    printf("%s\n", greet(hour, min));
     
     return 0;
     
