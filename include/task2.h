@@ -1,1 +1,1 @@
-const char * greet(int hour, int min, int sec);
+const char * greet(int hour, int min);

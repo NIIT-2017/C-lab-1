@@ -1,12 +1,10 @@
 char * convert(char buf[], double angle, char type)
 {
-    float corner;
+    
     if (type == 'R') {
-        corner = angle * 3.1415 / 180;
-        sprintf(buf, "%.4lfD", corner);
+        sprintf(buf, "angle = %fD", angle / 0.01745);
     } else if (type == 'D') {
-        corner = angle * 180 / 3.1415;
-        sprintf(buf, "%.4lfR", corner);
+        sprintf(buf, "angle = %fR", angle / 57.2958);
     }
     return buf;
     
