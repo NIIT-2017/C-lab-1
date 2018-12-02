@@ -3,12 +3,13 @@
 
 int main()
 {
-    float angle;
     char type;
-    char buf[10];
+    float angle;
+    char buf[30];
     
-    printf("Enter angle:");
+    printf("Enter angle: ");
     scanf("%f%c", &angle, &type);
     printf(convert(buf, angle, type));
     
+    return 0;
 }

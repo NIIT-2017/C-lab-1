@@ -1,23 +1,27 @@
-float idealWeight (char gender, float height) { // функция возвращающая значение идеального веса в зависимости от пола
-    if (gender == 'm') {
-        return height - 100;
-    } else if (gender == 'w') {
-        return height - 110;
-    } else {
-        return 0;
+int getRecommendation(char gender, float height, float weight)
+
+{
+    float ideal_weight = 0;
+    if (gender == 'm')
+    
+    {
+        ideal_weight = height - 100;
+        if (weight < ideal_weight)
+            return -1;
+        else if (weight > ideal_weight)
+            return 1;
+        else if (weight == ideal_weight)
+            return 0;
+    }
+    
+    else if (gender == 'w')
+    {
+        ideal_weight = height - 110;
+        if (weight < ideal_weight)
+            return -1;
+        else if (weight > ideal_weight)
+            return 1;
+        else if (weight == ideal_weight)
+            return 0;
     }
 }
-
-int getRecommendation(char gender, float height, float weight) { // функция возращает значение, соответствующее рекоммендации по потере, набору или оставления в норме веса по результатам сравнения значения функции idealWeight с weight (значение, введенное пользователем)
-    float yourIdealWeight = idealWeight(gender, height);
-    if (yourIdealWeight < weight) {
-        return 1;
-    }
-    else if (yourIdealWeight > weight) {
-        return -1;
-    } else {
-        return 0;
-    }
-}
-
-

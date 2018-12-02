@@ -1,5 +1,5 @@
-float convert(int feet,int inches)
+float convert(int feet, int inches)
 {
-    return (feet * 12 + inches) * 2.54;
+    float cm = ((feet * 12 + inches)*2.54);
+    return cm;
 }
-
