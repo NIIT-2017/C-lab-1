@@ -32,7 +32,7 @@ const char * greet(int hour, int min)
 	if (hour >= 18 && hour<24 && min < 60)
 		return "Good evening!";
 	if (hour > 24 || min >= 60)
-		return "Uncorrect time";
+		return "Uncorrect time!";
 }
 
 
