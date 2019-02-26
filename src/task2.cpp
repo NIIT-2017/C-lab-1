@@ -4,22 +4,8 @@
 
 
 const char * greet(int hour, int min)
-{
-	//char inputtime[SIZE];
-	/*char h[2];
-	for (int i = 0; inputtime[i] != ':'; i++)
-	{
-		h[i] = inputtime[i];
-	}
-
-	hour = atoi(h);
-
-	char m[2];
-	for (int i = 3; inputtime[i] != ':'; i++)
-	{
-		m[2] = inputtime[i];
-	}
-	min = atoi(m);*/
+/*{
+	
 
 	if (hour >= 00 && hour < 06 && min < 60)
 		return "Good night!";
@@ -32,8 +18,21 @@ const char * greet(int hour, int min)
 	if (hour >= 18 && hour<24 && min < 60)
 		return "Good evening!";
 	if (hour > 24 || min >= 60)
-		return "Uncorrect time!";
+		return "Uncorrect time";
+}*/
+
+{if (hour >= 0 && hour < 6 && min >= 0 && min < 60)
+	return "Good night!";
+else if (hour >= 6 && hour < 11 && min >= 0 && min < 60)
+	return "Good morning!";
+else if (hour >= 11 && hour < 18 && min >= 0 && min < 60)
+	return "Good day!";
+else if (hour >= 18 && hour < 24 && min >= 0 && min < 60)
+	return "Good evening!";
+else
+return "Uncorrect time!";
 }
+
 
 
 
