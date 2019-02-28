@@ -1,22 +1,12 @@
 #include "task3.h"
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+
  char * convert(char buf[], double angle, char type)
 {
-	switch (type)
-	{
-	case 'R':;
-	case 'r':
-	{
-		sprintf(buf, "%.1f%c\0", (angle * 180) / 3.14159, 'D');
-	}
-			 break;
-	case 'D':;
-	case 'd':
-	{
-		sprintf(buf, "%.5f%c\0", (angle * 3.14159) / 180, 'R');
-	}
-			 break;
-	}
+	if (type == 'D')
+		sprintf(buf, "angle=%fR", (angle / 57.2958));
+	else if (type == 'r')
+		sprintf(buf, "angle=%fD", (angle) / 0.01745);
 	return buf;
 } 

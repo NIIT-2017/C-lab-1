@@ -15,11 +15,11 @@ int main1()
 	printf("weight: ");
 	scanf("%f", &w);
 	int t = getRecommendation(g,h,w);
-	if (t == -1)
-	   puts("Your weight is too low\n");
-	else if (t == 1)
-		puts("You have overweight\n");
-	else if (t == 0)
-		puts("You are an ideal\n");
+	if (t == 0) 
+        printf("Norma\n");
+	if (t == 1) 
+        printf("Overweight\n");
+	if (t == -1) 
+        printf("Low weight\n");
 	return 0;
 }
