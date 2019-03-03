@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "task1.h"
-#include <Windows.h>
 
 int main()
 {
@@ -31,7 +30,6 @@ int main()
 	if (result == 1)
 		printf("Recommend to have a diet");
 
-	Sleep(500);
 
 	return 0;
 
