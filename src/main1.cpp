@@ -1,7 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "task1.h"
-#include <conio.h>
+
+
+
+
 
 
 
@@ -25,7 +28,8 @@ int main()
 		printf("You're gonna vanish if you keep cutting bread & meat outta your diet!");
 	else
 		printf("You'd better never try again!");
-	_getch(); // Я украл этот костыль и не понимаю, честно говоря, принцип его действия.  Без него консоль закрывается в конце.
-	return 0;
 
+		
+	return 0;
+	
 }

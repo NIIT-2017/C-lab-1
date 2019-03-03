@@ -1,7 +1,7 @@
 const char* greet(int hour, int min)
 {
 
-	const char * greets[] = { "Good night", "Good morning", "Good day", "Good evening", "Uncorrect time" };
+	const char * greets[] = { "Good night!", "Good morning!", "Good day!", "Good evening!", "Uncorrect time!" };
 	if (hour < 24 && min < 60)
 	{
 		int timeinminutes = hour * 60 + min;
