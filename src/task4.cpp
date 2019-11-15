@@ -2,5 +2,5 @@
 
 float convert(int feet, int inches)
 {
-    return (feet * 12) + (inches * 2.54);
+    return (feet * 12 * 2.54) + (inches * 2.54);
 }
