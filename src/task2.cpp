@@ -1,10 +1,7 @@
 #include "task2.h"
-#include <Windows.h>
 
 const char* greet(int hour, int min)
 {
-	SetConsoleCP(1251);		
-	SetConsoleOutputCP(1251);
     const char* str[] = { "Некорректное время", "Доброй ночи!",
 		"Доброе утро!", "Добрый день!", "Добрый вечер!" };
     if (hour >= 0 && hour < 6)

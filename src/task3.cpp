@@ -1,12 +1,9 @@
 #include "task3.h"
 #include <stdio.h>
 #include <iostream>
-#include <Windows.h>
 
 char* convert(char buf[], double angle, char type)
 {
-	SetConsoleCP(1251);		// установка кодовой страницы win-cp 1251 в поток ввода
-	SetConsoleOutputCP(1251);	// установка кодовой страницы win-cp 1251 в поток вывода
 	float constK = 57.2958f;
 	float result = 0;
 		if (type == 'd' && angle<360)
@@ -21,7 +18,7 @@ char* convert(char buf[], double angle, char type)
 			}
 				else 
 				{
-					printf("Ќеверно задано входное значение угла\n");
+					printf("Input angle value is incorrect\n");
 					return 0;
 				}
 	 snprintf(buf, 100, "%f", result);

@@ -1,33 +1,30 @@
 #include "task1.h"
 #include <stdio.h>
-#include <Windows.h>
 
 
 int main()
 
 {
-	SetConsoleCP(1251);		// установка кодовой страницы win-cp 1251 в поток ввода
-	SetConsoleOutputCP(1251);	// установка кодовой страницы win-cp 1251 в поток вывода
     char gender = 'g';
     float height = 0;
     float weight = 0;
-    printf("Укажите Ваш гендер q-мужчина w-женщина e-иное\n");
+    printf("Specify your gender q-male w-female e-different\n");
     scanf("%c", &gender);
-    printf("Укажите Ваш рост в см:\n");
+    printf("Please specify your height in cm:\n");
     scanf("%f", &height);
-    printf("Укажите Ваш вес в кг:\n");
+    printf("Enter your weight in kg:\n");
     scanf("%f", &weight);
     int recommendation = getRecommendation(gender, height, weight);
     switch (recommendation)
     {
         case 1:
-            printf("Ваш вес избыточен\n");
+            printf("Your weight is superfluous\n");
             break;
         case -1:
-            printf("Ваш вес недостаточен\n");
+            printf("Your weight is insufficient\n");
             break;
         case 0:
-            printf("Ваш вес идеален\n");
+            printf("Your weight is ideal\n");
     }
     return 0;
 } 

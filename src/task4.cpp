@@ -10,7 +10,7 @@ float convert(int feet, int inches)
 	}
 	else
 	{
-		return printf("Введенное значение не подходит под формат\n");
+		return printf("The value entered does not fit the format\n");
 	}
    return size;
 } 
