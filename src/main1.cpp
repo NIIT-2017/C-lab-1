@@ -14,8 +14,8 @@ int main()
     scanf("%f", &height);
     printf("Enter your weight in kg:\n");
     scanf("%f", &weight);
-    int recommendation = getRecommendation(gender, height, weight);
-    switch (recommendation)
+    // int recommendation = getRecommendation(gender, height, weight);
+    switch (getRecommendation)
     {
         case 1:
             printf("Your weight is superfluous\n");

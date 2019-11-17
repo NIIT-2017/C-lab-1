@@ -2,8 +2,8 @@
 
 const char* greet(int hour, int min)
 {
-    const char* str[] = { "Некорректное время", "Доброй ночи!",
-		"Доброе утро!", "Добрый день!", "Добрый вечер!" };
+    const char* str[] = { "Uncorrect time!", "Good night!",
+		"Good morning!", "Good day!", "Good evening!" };
     if (hour >= 0 && hour < 6)
         return str[1];
     else if (hour >= 6 && hour < 11)
