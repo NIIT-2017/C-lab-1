@@ -1,4 +1,3 @@
-#include "task2.h"
 
 const char* greet(int hour, int min)
 {

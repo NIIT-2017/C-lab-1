@@ -1,4 +1,4 @@
-#include "task2.cpp"
+#include "task2.h"
 #include <stdio.h>
 
 void clean_stdin(void) // the option to clear the input buffer
@@ -13,11 +13,18 @@ void clean_stdin(void) // the option to clear the input buffer
 int main()
 {
 	int hour = 0, min = 0;
-	printf("Enter time: ");
-	scanf("%d %d", &hour, &min);
+	while (1)
+	{
+		printf("Please, enter time: ");
+		if (scanf("%d %d", &hour, &min) != 2)
+		{
+			printf("Incorrect answer, only numbers and positive!\n");
+			clean_stdin();
+			continue;
+		}
+		break;
+	}
 	clean_stdin();
-	char result[50];
-	*result =*greet(hour, min);
-	printf("%c", result);
+	printf(greet(hour, min));
 	return 0;
 }
