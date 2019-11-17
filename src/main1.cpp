@@ -8,13 +8,13 @@ int main()
     char gender = 'g';
     float height = 0;
     float weight = 0;
-    printf("Specify your gender q-male w-female e-different\n");
+    printf("Specify your gender m-male w-female e-different\n");
     scanf("%c", &gender);
     printf("Please specify your height in cm:\n");
-    scanf("%f", &height);
+    scanf("%i", &height);
     printf("Enter your weight in kg:\n");
-    scanf("%f", &weight);
-    // int recommendation = getRecommendation(gender, height, weight);
+    scanf("%i", &weight);
+    int recommendation = getRecommendation(gender, height, weight);
     switch (getRecommendation)
     {
         case 1:
