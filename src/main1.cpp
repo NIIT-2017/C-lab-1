@@ -11,9 +11,9 @@ int main()
     printf("Specify your gender m-male w-female e-different\n");
     scanf("%c", &gender);
     printf("Please specify your height in cm:\n");
-    scanf("%i", &height);
+    scanf("%f", &height);
     printf("Enter your weight in kg:\n");
-    scanf("%i", &weight);
+    scanf("%f", &weight);
     int recommendation = getRecommendation(gender, height, weight);
     switch (getRecommendation)
     {
