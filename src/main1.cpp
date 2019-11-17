@@ -5,7 +5,7 @@
 int main()
 
 {
-    char gender = 'g';
+    char gender = 'm';
     float height = 0;
     float weight = 0;
     printf("Specify your gender m-male w-female e-different\n");
