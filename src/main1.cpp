@@ -4,7 +4,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 int main()
-
 {
     char gender = 'm';
     float height = 0;
@@ -16,7 +15,7 @@ int main()
     printf("Enter your weight in kg:\n");
     scanf("%f", &weight);
     int recommendation = getRecommendation(gender, height, weight);
-    switch (getRecommendation)
+    switch (Recommendation)
     {
         case 1:
             printf("Your weight is superfluous\n");
