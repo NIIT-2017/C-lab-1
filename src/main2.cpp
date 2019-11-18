@@ -15,8 +15,8 @@ int main()
 	int hour = 0, min = 0;
 	while (1)
 	{
-		printf("Please, enter time: ");
-		if (scanf("%d %d", &hour, &min) != 2)
+		printf("Please, enter time (hour:minute) : ");
+		if (scanf("%d:%d", &hour, &min) != 2)
 		{
 			printf("Incorrect answer, only numbers and positive!\n");
 			clean_stdin();
@@ -24,7 +24,6 @@ int main()
 		}
 		break;
 	}
-	clean_stdin();
 	printf(greet(hour, min));
 	return 0;
 }
