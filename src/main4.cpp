@@ -2,7 +2,7 @@
 #include "task4.h"
 #include <stdio.h>
 
-void clean_stdin(void) // the option to clear the input buffer
+void clean_stdin(void) // the option to clear the input  buffer
 {
 	int c;
 	do

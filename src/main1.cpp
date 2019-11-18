@@ -1,4 +1,4 @@
-#include "task1.cpp"
+#include "task1.h"
 #include <stdio.h>
 
 void clean_stdin(void)
@@ -50,9 +50,7 @@ int main() // main function
 		else
 			break;
 	}
-	int recom = 0;
-	clean_stdin();
-	recom = getRecommendation(gender, height, weight); // the function call to determine the weight ratio
+	int recom = getRecommendation(gender, height, weight); // the function call to determine the weight ratio
 	if (recom < 0)
 		printf("Your weight is insufficient\n");
 	else if (recom > 0)

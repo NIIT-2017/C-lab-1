@@ -1,6 +1,5 @@
-#include "task1.h"
 
-inline int getRecommendation(char gender, float height, float weight) //weight analysis function
+int getRecommendation(char gender, float height, float weight) //weight analysis function
 {
 	if (gender == 'm' || gender == 'M') // check for male
 	{

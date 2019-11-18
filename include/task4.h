@@ -1,1 +1,1 @@
-float convert(int feet, int inches);
+float convert(int feet, int inches);//header

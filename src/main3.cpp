@@ -2,7 +2,7 @@
 #include "task3.h"
 #include <stdio.h>
 
-void clean_stdin(void) // the option to clear the input buffer
+void clean_stdin(void) // the option to clear the input  buffer
 {
 	int c;
 	do
@@ -36,7 +36,7 @@ int main()
 		else
 			break;
 	}
-	printf(convert(buf, angle, type));
+	printf("%s", convert(buf, angle, type));
 	return 0;
 
 

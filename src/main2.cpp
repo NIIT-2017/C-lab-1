@@ -18,12 +18,12 @@ int main()
 		printf("Please, enter time (hour:minute) : ");
 		if (scanf("%d:%d", &hour, &min) != 2)
 		{
-			printf("Incorrect answer, only numbers and positive!\n");
+			printf("Incorrect answer, only numbers and positive! \n");
 			clean_stdin();
 			continue;
 		}
 		break;
 	}
-	printf(greet(hour, min));
+	printf("%s", greet(hour, min));
 	return 0;
 }
