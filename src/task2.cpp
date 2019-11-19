@@ -13,5 +13,5 @@ const char *greet(int hour,int min)
       else if(hour >=18 &&hour <24)
 	return(char*)"Good Evening!";
    }
-   return(char*)"Incorrect time!";
+   return(char*)"Uncorrect time!";
 }
