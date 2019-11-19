@@ -2,7 +2,7 @@
 
 const char *greet(int hour,int min)
 {
-   while(hour>=00 && hour<24 &&hour!=0)
+   while(hour>=00 && hour<24)
    {
       if(hour >=00 && hour <06)
 	return(char*)"Good Night!";
