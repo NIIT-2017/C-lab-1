@@ -4,7 +4,7 @@ const char * greet(int hour,int min)
 {
     if (hour >=00 && hour <= 05 && min >= 00 && min <= 59) // ночь" - с 00:00 до 06:00
     {
-    return "Good Night!";
+    return "Good night!";
     }
     else if (hour >=06 && hour <= 11 && min >= 00 && min <= 59) // "утро" - с 06:00 до 11:00
     {
