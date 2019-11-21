@@ -18,7 +18,7 @@ int main()
         }
 
     float convert(int feet,int inches);
-    float result = convert(feet,inches)*2.54;
+    float result = convert(feet,inches);
 
     printf(" Ваш рост в европейскей системе мер - %.1f \n",result);
 

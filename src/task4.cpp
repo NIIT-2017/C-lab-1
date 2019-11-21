@@ -4,6 +4,6 @@ float convert(int feet,int inches)
 {
     feet=(feet*12);
     inches=feet+inches;
-    float convert = inches;
+    float convert = inches*2.54;
     return (convert);
 }
