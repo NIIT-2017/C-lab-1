@@ -9,7 +9,7 @@ int main()
     float height = 0;
     float weight = 0;
     
-    printf("Enter your sex, height, weight: \n");
+    printf("Enter your sex (type 'm' or 'w'), height, weight: \n");
     scanf("%s %f %f", gender, &height, &weight);
    
     int result = getRecommendation(*g, height, weight);
