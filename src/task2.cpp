@@ -3,7 +3,7 @@
 const char* greet(int hour, int min) {
 
     if (hour < 0 || hour>24 || min < 0 || min >60) {
-        printf("Uncorrect time!\n");
+        return "Uncorrect time!\n";
     }
     else if (hour >= 0 && hour < 6) {
         return "Good night!\n";
@@ -15,6 +15,5 @@ const char* greet(int hour, int min) {
         return "Good day!\n";
     }
     else return "Good evening!\n";
-
 }
 
