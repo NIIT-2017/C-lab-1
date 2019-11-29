@@ -7,6 +7,6 @@ const char* greet(int hour, int min)
 	else if ((11 <= hour) && (hour < 18) && (0 <= min) && (min <= 59))
 		return "Good day!";
 	else if ((18 <= hour) && (hour < 24) && (0 <= min) && (min <= 59))
-		return "Good evning!";
+		return "Good evening!";
 	else return "Uncorrect time!";
 }
