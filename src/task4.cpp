@@ -13,10 +13,13 @@ float convert(int feets, int inches) {
 	float feet = 12 * inche;
 	char buf[64] = { 0 };
 
-	sprintf(buf, "%d,%d", feets, inches);
-	resf = atof(buf);
-	printf("convert resf = %f\n", resf);
-	result = resf * feet;
+	if(inches >= 12) {
+		feets = feets + (inches / 12);
+		inches = inches % 12;
+		printf("feets = %d inches = %d\n", feets, inches);
+	}
+
+	result = (feets * feet) + (inches * inche);
 	printf("convert result = %f\n", result);
 
 	return result;
