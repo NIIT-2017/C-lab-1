@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <iostream>
 
-//#pragma warning(disaible:4996)
-
 int main()
 {
 	float angle = 0;
