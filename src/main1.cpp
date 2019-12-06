@@ -11,11 +11,12 @@ int main()
     int res = 0;
 
     printf("Input your gender: ");
-    scanf("%d", &gender);
+    scanf("%c", &gender);
     printf("Input your height:\n ");
     scanf("%d", &height);
     printf("Input your weight:\n ");
     scanf("%d", &weight);
     res = getRecommendation(gender, height, weight);
-    printf("Final %d", res);
+    printf("result %d", res);
 }
+

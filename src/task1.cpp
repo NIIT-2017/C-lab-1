@@ -3,15 +3,16 @@
 #include "task1.h"
 int getRecommendation(char gender,int height, int weight)
 {
-    if (gender == "m")
+    if (gender == 'm')
     {
         return height - 100;
-    }else if(gender == "w")
+    }else if(gender == 'w')
     {
         return height - 110;
     }else
     {
-        printf("Wrong char");
+        printf("Wrong");
         return 1;
     }
 }
+
