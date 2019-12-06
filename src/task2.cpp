@@ -1,11 +1,11 @@
 const char* greet(int hour, int min)
 {
-    const char *phrase[] = { "Incorrect time!",
+    const char *phrase[] = { "Uncorrect time!",
                              "Good night!",
                              "Good morning!",
-                             "Good afternoon!",
+                             "Good day!",
                              "Good evening!" };
-    
+
     if (min < 0 || min > 59)
         return phrase[0];
     else if (hour >= 0 && hour < 6)
