@@ -1,18 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "task1.h"
+
 int getRecommendation(char gender,int height, int weight)
 {
+    int ideal = 0;
     if (gender == 'm')
     {
-        return height - 100;
-    }else if(gender == 'w')
+        ideal = height - 100;
+        if (weight > ideal)
+        {
+            return 1;
+        }
+        else if (weight < ideal)
+        {
+            return -1;
+        }
+        else if (weight == ideal)
+        {
+            return 0;
+        }
+    }
+    else if (gender == 'w')
     {
-        return height - 110;
+        ideal = height - 110;
+          if (weight > ideal)
+        {
+            return 1;
+        }
+        else if (weight < ideal)
+        {
+            return -1;
+        }
+        else if (weight == ideal)
+        {
+            return 0;
+        }
     }else
     {
-        printf("Wrong");
-        return 1;
+        printf("Uncorrect gender");
     }
 }
-

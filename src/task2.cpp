@@ -17,7 +17,7 @@ const char* greet(int hour, int min) {
             }
         else
             {
-                return "Incorrect time!";
+                return "Uncorrect time!";
 
             }
 }

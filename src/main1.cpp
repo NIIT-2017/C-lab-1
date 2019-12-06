@@ -7,7 +7,6 @@ int main()
     int weight = 0;
     int height = 0;
     char gender = 0;
-    int ideal;
     int res = 0;
 
     printf("Input your gender: ");
@@ -17,6 +16,18 @@ int main()
     printf("Input your weight:\n ");
     scanf("%d", &weight);
     res = getRecommendation(gender, height, weight);
-    printf("result %d", res);
-}
 
+    if (res ==  0)
+    {
+        printf("Your weight is ideal \n");
+    }
+    else if (res == 1)
+    {
+        printf("It's overweight\n");
+    }
+    else if (res == -1)
+    {
+        printf("It's underweight \n");
+    }
+    return 0;
+}
