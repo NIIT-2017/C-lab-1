@@ -3,10 +3,10 @@
 int getRecommendation(char gender, float height, float weinght)
 {
 	float normalweight = 0;
-	if (gender == 'W' || gender == 'w')
-		normalweight = height - 110;
-	else if (gender == 'M' || gender == 'm')
+	if (gender == 'M' || gender == 'm')
 		normalweight = height - 100;
+	else if (gender == 'W' || gender == 'w')
+		normalweight = height - 110;
 	float deltaweight = weinght - normalweight;
 	if (deltaweight < 0)
 		return -1;
