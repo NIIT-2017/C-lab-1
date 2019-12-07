@@ -1,13 +1,11 @@
 #include "task2.h"
 
-
-const char * greet(int hour, int min)
+const char* greet(int hour, int min)
 {
-	    if (((hour < 00) && (hour > 24)) || ((min <= 00) && (min > 60)))
-			//проверяем правильность ввода, задаём ограничиващий диапазон ввода данных
+	    if (((hour < 00) && (hour > 24)) || ((min < 00) && (min > 60)))
 		return("Uncorrect time!\n");	
 
-		if ((hour >= 00 && hour <= 06)) 
+		else if ((hour >= 00 && hour <= 06)) 
 		return("Good night!\n"); 
 
 		else if ((hour >= 06 && hour <= 11))
