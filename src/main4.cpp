@@ -12,7 +12,9 @@ int main()
 	scanf("%d %c %d", &feet, &apo, &iches);
 	
 	if (apo == '\'')
-		printf("%0.1f centimetres", convert(feet, iches));
+
+	printf("%0.1f centimetres", convert(feet, iches));
+
 	
 	else 
 		printf("Enter correct format");

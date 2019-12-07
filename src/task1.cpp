@@ -23,4 +23,6 @@ int getRecommendation(char gender, float height, float weight)
 		return -1;
 	else
 		return 0;
-	}
+}
+
+	

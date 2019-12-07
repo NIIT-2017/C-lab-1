@@ -3,6 +3,7 @@
 
 int main()
 {
+
 	char gender = 'w';
 	float height = 0, weight = 0;
     
@@ -19,6 +20,5 @@ int main()
 	else if (result == +1)
 		printf("You need to lose weight\n");
 	else if (result == -1)
-		printf("You need to get a weight\n");
 	return 0;
 }
