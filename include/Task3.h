@@ -1,1 +1,1 @@
-float convert(int feet, int inches);
+char* convert(char buf[], double angle, char type);
