@@ -6,18 +6,17 @@
 
 char* convert(char buf[], double angle, char type)
 {
-    double result = 0; // variable storing the result of the  conversion
-    if (type == 'r' || type == 'R') // if entered in radians
+    double result = 0;
+    if (type == 'r' || type == 'R') 
     {
         result = (angle * 180 / M_PI);
         type = 'D';
     }
-    else //if entered in degrees
+    else
     {
         result = (angle * M_PI / 180);
         type = 'R';
     }
-    sprintf(buf, "%f%c", result, type); // write the result + attribute to the string
+    sprintf(buf, "%f%c", result, type); 
     return buf;
-
-}
+    }

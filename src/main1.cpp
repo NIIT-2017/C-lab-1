@@ -8,7 +8,7 @@ int main()
     float height = 0, weight = 0;
 
     printf("What your gender (m/w)? \n");
-    scanf("%c", &gender);
+    scanf("%c",&gender);
 
     if ((gender != 'm') && (gender != 'w'))
     {
@@ -16,10 +16,10 @@ int main()
         return 0;
     }
     printf("What your height? \n");
-    scanf("%f", &height);
+    scanf("%f",&height);
 
     printf("What your weight? \n");
-    scanf("%f", &weight);
+    scanf("%f",&weight);
 
     int result = getRecommendation(gender, height, weight);
     {

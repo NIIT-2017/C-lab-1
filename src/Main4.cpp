@@ -2,7 +2,7 @@
 #include "task4.h"
 #include <stdio.h>
 
-void clean_stdin(void) // the option to clear the input  buffer
+void clean_stdin(void)
 {
     int c;
     do
@@ -19,7 +19,7 @@ int main()
     while (1)
     {
         printf("Enter the data: ");
-        if (scanf("%d'%d", &feet, &inches) != 2) //accept and immediately check whether two variables have been received
+        if (scanf("%d'%d", &feet, &inches) != 2) 
         {
             printf("Incorrect data, format: feet'inches.!\n");
             clean_stdin();

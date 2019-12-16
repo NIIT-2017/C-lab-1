@@ -1,7 +1,7 @@
 #include "task2.h"
 #include <stdio.h>
 
-void clean_stdin(void) // the option to clear the input buffer
+void clean_stdin(void)
 {
     int c;
     do
@@ -25,5 +25,6 @@ int main()
         break;
     }
     printf("%s", greet(hour, min));
+
     return 0;
 }
