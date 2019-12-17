@@ -28,6 +28,6 @@ int main()
         else
             break;
     }
-    printf("%.1f", convert(feet, inches));
+    printf("%.2f", convert(feet, inches));
     return 0;
 }
