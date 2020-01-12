@@ -7,7 +7,7 @@
 float convert(int feet, int inches)
 {
 	if (feet < 0 || inches < 0) 
-		printf("zanovo, cosoruky)\n");
+		printf("zanovo\n");
 	else
 	{
 		double ep = (((feet * 12) + inches) * 2.54);
