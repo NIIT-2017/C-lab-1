@@ -4,13 +4,16 @@
 
 int main()
 {
-	int hour=0;
-	int min=0;
-	int sec=0;
-	printf("vvedite vremya v formate HH:MM:SS\n");
+	int hour=100;
+	int min=100;
+	int sec=100;
+	printf("Enter time (HH:MM:SS)\n");
 	scanf("%d:%d:%d", &hour, &min, &sec);
+	if (hour>=0&&hour<24&&min>=0&&min<60&&sec>=0&&sec<60)
+		printf (greet(hour, min));
+	else
+		printf("uncorrect time!\n");
 
-	printf (greet(hour, min));
 
 	return 0;
 }
