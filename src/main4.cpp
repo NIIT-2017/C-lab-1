@@ -3,14 +3,13 @@
 
 int main()
 {
-    int feet = 0, inches = 0; // перемменые футов и дюймов
+    int feet = 0, inches = 0; 
    
-    printf ("Enter your feet and inches: "); // функция вывода сообщения на экран
-    scanf ("%d %d", &feet, &inches); // функция ввода футы и дюймы
+    printf ("Enter your feet and inches: "); 
+    scanf ("%d %d", &feet, &inches); 
 
   
-    printf ("Your syntimeters is: %.1f",convert ( feet, inches) ); // вывод значения функции convert и сообщения с текстом
-
+    printf ("Your syntimeters is: %.1f",convert ( feet, inches) ); 
         return 0;
 
 }

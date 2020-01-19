@@ -1,4 +1,4 @@
-#include "task3.h"
+
 #define _USE_MATH_DEFINES
 #define _CRT_SECURE_NO_WARNING
 #include <math.h>
