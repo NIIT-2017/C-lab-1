@@ -14,7 +14,7 @@ int main()
             printf("%s.\n", time);
         }
         else
-            puts("incorect time.");
+            puts("Uncorrect time!");
     return 0;
 
 }

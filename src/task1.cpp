@@ -14,4 +14,7 @@ int getRecommendation(char gender, float height, float weight)
     else if (ideal_weight - weight < 0)
         return 1;
 
+    else 
+        return 0;
+
 }
