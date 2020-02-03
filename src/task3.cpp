@@ -16,4 +16,5 @@ char* convert(char buf[], double angle, char type)
         sprintf(buf, "%.5lf%c.", value,type);
     }
     return buf;
+
 }
