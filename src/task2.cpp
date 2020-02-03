@@ -12,7 +12,7 @@ const char *greet(int hour, int min)
         {
             return "Good day!";
         }
-        else if (hour >= 19 && hour < 0 && min >= 0 && min <= 59)
+        else if (hour >= 19 && hour < 24 && min >= 0 && min <= 59)
         {
             return "Good evening!";
         }
