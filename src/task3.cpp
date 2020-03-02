@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include "task3.h"
 include <stdio.h>
-
-
 char* convert(char buf[], double angle, char type) {
     double degree = 180;
     double p = 3.14159;
