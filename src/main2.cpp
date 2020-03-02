@@ -9,8 +9,6 @@ int main()
         int sec = 0;
 	        printf("Please, enter the time: HH:MM:SS ");
 	        scanf("%d:%d:%d", &hour, &min, &sec);
-	int hour = 0;
-	int min = 0;
 	printf("Enter your time 'hh:mm'");
 	scanf("%d:%d", &hour, &min);
 	printf(greet(hour, min));
