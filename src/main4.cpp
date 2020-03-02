@@ -2,28 +2,12 @@
 #include "task4.h"
 #include <stdio.h>
 
-void clean_stdin(void)
+int main()
 {
-    int c;
-    do {
-        c = getchar();
-    } while (c != '\n' && c != EOF);
-}
-
-int main() 
-{
-    int feet = 0;
-    int inches = 0;
-    while (1) {
-        printf("Write feet and inches in a right format 00'00 ");
-        int numberresult = scanf("%i'%i", &feet, &inches);
-        if (numberresult < 2) {
-            printf("You're wrong!\n");
-            clean_stdin();
-        }
-        else
-            break;
-    }
-    printf("%.1f", convert(feet, inches));
-    return 0;
+	int feet = 0;
+	int inches = 0;
+	printf("Enter right format (feet'inches): ");
+	scanf("%d'%d", &feet, &inches);
+	printf("%.2fcm", convert(feet, inches));
+	return 0;
 } 
