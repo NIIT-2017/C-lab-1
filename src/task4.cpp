@@ -1,5 +1,5 @@
-#include "task4.h"
 #include <stdio.h>
+#include "task4.h"
 
 float convert(int feet, int inches)
 {
