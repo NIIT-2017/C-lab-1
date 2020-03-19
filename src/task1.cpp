@@ -1,19 +1,21 @@
-#include <stdio.h>
-#include "Task1.h"
+#include"task1.h"
 
 int getRecommendation(char gender, float height, float weight)
 {
-	int genderchoise;
 	if (gender == 'm')
-		genderchoise = 100;
-	else if (gender == 'w')
-		genderchoise = 110;
+		if (weight == (height - 100))
+			return 0;
+		else
+			if (weight >= (height - 100))
+				return 1;
+			else
+				return -1;
 	else
-		return 2;
-	if ((height - genderchoise) < weight)
-		return -1;
-	else if ((height - genderchoise) > weight)
-		return 1;
-	else
-		return 0;
+		if (weight == (height - 110))
+			return 0;
+		else
+			if (weight >= (height - 110))
+				return 1;
+			else
+				return -1;
 }
