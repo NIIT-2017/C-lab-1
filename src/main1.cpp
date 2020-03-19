@@ -5,7 +5,8 @@ int main()
 {
 	char gender;
 	float height, weight;
-	printf("Enter your gender(m or w), height, weight. (m,173,70)\n");
+	printf("Enter your gender(m or w), height, weight.\n");
+	printf("Exemple: (m,173,70) \n");
 	scanf("(%c,%f,%f)", &gender, &height, &weight);
 	if (getRecommendation(gender, height, weight) == 0)
 		printf("Weight is ideal!\n");
